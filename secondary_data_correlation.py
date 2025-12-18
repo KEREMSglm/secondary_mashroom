@@ -7,7 +7,6 @@ from ucimlrepo import fetch_ucirepo
 secondary_mushroom = fetch_ucirepo(id=848)
 # Hedef sütunu çıkar (sadece özellikler kalsın)
 X_df = secondary_mushroom.data.features
-y = LabelEncoder().fit_transform(secondary_mushroom.data.targets)
 # Kategorik verileri sayısallaştır
 for col in X_df.columns:
     X_df.loc[:, col] = LabelEncoder().fit_transform(X_df[col].astype(str))
@@ -15,7 +14,7 @@ for col in X_df.columns:
 # Korelasyon matrisi oluştur
 corr_matrix = X_df.corr()
 
-# Görselleştir (CFS mantığıyla heatmap)
+# Görselleştir (heatmap)
 plt.figure(figsize=(12, 8))
 sns.heatmap(
     corr_matrix,
