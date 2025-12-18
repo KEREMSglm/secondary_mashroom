@@ -1,4 +1,4 @@
 # secondary_mashroom
-ucimlrepo paketini kullanabilmek i‡in ”ncelikle aŸa§daki komutu ‡alŸtrmanz gerekmektedir:
+ucimlrepo paketini kullanabilmek iÃ§in Ã¶ncelikle aÅŸaÄŸÄ±daki komutu Ã§alÄ±ÅŸtÄ±rÄ±lmasÄ± gerekmektedir:
 
 pip install ucimlrepo
